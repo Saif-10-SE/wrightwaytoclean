@@ -362,12 +362,13 @@ h1, h2, h3, h4 { font-family: var(--font-d); line-height: 1.12; letter-spacing: 
 }
 .hero-video, .hero-poster {
   width: 100%; height: 100%; object-fit: cover;
+  filter: brightness(1.15);
 }
 .hero-video { opacity: 0; transition: opacity .6s ease; }
 .hero-video.is-on { opacity: 1; }
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(4,10,22,0.82) 0%, rgba(4,10,22,0.55) 48%, rgba(4,10,22,0.72) 100%);
+    linear-gradient(90deg, rgba(4,10,22,0.55) 0%, rgba(4,10,22,0.28) 48%, rgba(4,10,22,0.45) 100%);
 }
 
 .hero-grid {
@@ -567,25 +568,17 @@ h1, h2, h3, h4 { font-family: var(--font-d); line-height: 1.12; letter-spacing: 
   position: absolute; inset: 0;
   width: 100%; height: 100%;
   object-fit: cover;
-  opacity: 0;
-  transform: scale(1.06);
-  transition: opacity .5s var(--ease), transform .8s var(--ease);
-  z-index: 0;
-}
-.svc:hover img {
   opacity: 1;
-  transform: scale(1.12);
+  z-index: 0;
 }
 .svc::after {
   content: "";
   position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.72));
-  opacity: 0;
-  transition: opacity .45s var(--ease);
+  opacity: 0.85;
   z-index: 1;
   pointer-events: none;
 }
-.svc:hover::after { opacity: 1; }
 .svc-num {
   position: absolute;
   top: 0;
@@ -645,6 +638,12 @@ h1, h2, h3, h4 { font-family: var(--font-d); line-height: 1.12; letter-spacing: 
   letter-spacing: 0.04em;
   padding: 11px 20px;
   text-transform: none;
+  transition: background .25s var(--ease), color .25s var(--ease);
+}
+.svc .more:hover,
+.svc:hover .more {
+  background: #fff;
+  color: #111;
 }
 
 /* Process — brochure spread, no timeline gimmicks */
@@ -1061,7 +1060,7 @@ h1, h2, h3, h4 { font-family: var(--font-d); line-height: 1.12; letter-spacing: 
 .page-hero.contact-hero {
   background:
     linear-gradient(90deg, rgba(6,20,39,0.88), rgba(6,20,39,0.5)),
-    url("https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=1800&q=70") center/cover;
+    url("https://images.unsplash.com/photo-1558317374-058bb2c308b3?auto=format&fit=crop&w=1800&q=70") center/cover;
 }
 .page-hero h1 { font-size: clamp(40px, 6vw, 72px); margin-top: 10px; }
 
