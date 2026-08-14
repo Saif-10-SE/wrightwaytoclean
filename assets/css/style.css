@@ -21,9 +21,9 @@
   --shadow: 0 24px 60px rgba(16, 14, 10, 0.16);
   --radius: 22px;
   --header-h: 92px;
-  --font-d: "Playfair Display", serif;
-  --font-b: "Outfit", sans-serif;
-  --font-g: "Roboto", sans-serif;
+  --font-d: "Montserrat", sans-serif;
+  --font-b: "Montserrat", sans-serif;
+  --font-g: "Montserrat", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -115,7 +115,7 @@ ul { list-style: none; }
   50% { transform: scale(1.06); opacity: 0.8; }
 }
 
-/* Noise overlay removed — feTurbulence was painting every frame */
+/* Noise overlay removed; feTurbulence was painting every frame */
 
 /* Buttons */
 .btn {
@@ -150,15 +150,12 @@ ul { list-style: none; }
 .btn:hover .arrow { transform: translateX(4px); }
 
 .eyebrow {
-  display: inline-flex; align-items: center; gap: 10px;
+  display: inline-flex; align-items: center;
   font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase;
   color: var(--gold); font-weight: 600;
 }
-.eyebrow::before {
-  content: ""; width: 28px; height: 1px; background: currentColor;
-}
 
-h1, h2, h3, h4 { font-family: var(--font-d); line-height: 1.12; letter-spacing: -0.03em; }
+h1, h2, h3, h4 { font-family: var(--font-d); line-height: 1.12; letter-spacing: 0; }
 .section { padding: 100px 0; position: relative; }
 .section-head { text-align: center; max-width: 680px; margin: 0 auto 64px; }
 .section-head h2 { font-size: clamp(32px, 4.4vw, 56px); margin: 10px 0 16px; }
@@ -166,7 +163,7 @@ h1, h2, h3, h4 { font-family: var(--font-d); line-height: 1.12; letter-spacing: 
 .gold { color: var(--gold); }
 .cyan { color: var(--cyan); }
 
-/* Topbar + Header — GC Cleaning layout */
+/* Topbar + Header, GC Cleaning layout */
 .site-chrome {
   z-index: 40;
   background: rgba(18, 14, 10, 0.88);
@@ -482,7 +479,7 @@ h1, h2, h3, h4 { font-family: var(--font-d); line-height: 1.12; letter-spacing: 
   font-family: var(--font-d);
   font-size: clamp(36px, 4vw, 56px);
   color: var(--gold);
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
 }
 .stat span { color: rgba(255,255,255,0.7); font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
 
@@ -646,7 +643,7 @@ h1, h2, h3, h4 { font-family: var(--font-d); line-height: 1.12; letter-spacing: 
   color: #111;
 }
 
-/* Process — brochure spread, no timeline gimmicks */
+/* Process, brochure spread, no timeline gimmicks */
 .process {
   background: #efece6;
   color: var(--ink);
