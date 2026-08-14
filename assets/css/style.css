@@ -637,8 +637,7 @@ h1, h2, h3, h4 { font-family: var(--font-d); line-height: 1.12; letter-spacing: 
   text-transform: none;
   transition: background .25s var(--ease), color .25s var(--ease);
 }
-.svc .more:hover,
-.svc:hover .more {
+.svc .more:hover {
   background: #fff;
   color: #111;
 }
