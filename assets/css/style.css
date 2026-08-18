@@ -1045,18 +1045,18 @@ h1, h2, h3, h4 { font-family: var(--font-d); line-height: 1.12; letter-spacing: 
 .page-hero {
   background:
     linear-gradient(90deg, rgba(6,20,39,0.88), rgba(6,20,39,0.55)),
-    url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=70") center/cover;
+    url("../img/kitchen.jpg") center/cover;
   color: #fff; padding: 70px 0 80px; position: relative; overflow: hidden;
 }
 .page-hero.about-hero {
   background:
     linear-gradient(90deg, rgba(6,20,39,0.88), rgba(6,20,39,0.5)),
-    url("https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1800&q=70") center/cover;
+    url("../img/work/bedroom-master.jpg") center/cover;
 }
 .page-hero.contact-hero {
   background:
     linear-gradient(90deg, rgba(6,20,39,0.88), rgba(6,20,39,0.5)),
-    url("https://images.unsplash.com/photo-1558317374-058bb2c308b3?auto=format&fit=crop&w=1800&q=70") center/cover;
+    url("../img/work/lodge-living.jpg") center/cover;
 }
 .page-hero h1 { font-size: clamp(40px, 6vw, 72px); margin-top: 10px; }
 
